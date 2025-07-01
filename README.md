@@ -29,9 +29,15 @@ Run this command from the terminal:
 dart custom_generator.dart generate
 ```
 
-### Option 2 (if you're in the project root directory):
+### Option 2 (if you're not in `lib/translations/` directory):
+First navigate to the `lib/translations/` folder using:
 ```sh
-dart lib/translations/custom_generator.dart generate
+cd ..            # Repeat this until you reach the root directory
+cd lib/translations    # Then run this command
+```
+Then run:
+```sh
+dart custom_generator.dart generate
 ```
 
 This will generate `locale_keys.s.dart` inside `lib/translations/`.
@@ -69,9 +75,15 @@ Terminalden aşağıdaki komutlardan birini çalıştırın:
 dart custom_generator.dart generate
 ```
 
-### Seçenek 2 (proje kök dizinindeyseniz):
+### Seçenek 2 (`lib/translations/` dizininde değilseniz):
+Önce bu dizine geçmek için sırasıyla şu komutları kullanın:
 ```sh
-dart lib/translations/custom_generator.dart generate
+cd ..            # Kök dizine gelene kadar bu komutu tekrarlayın
+cd lib/translations    # Ardından bu komutu çalıştırın
+```
+Ardından şu komutu girin:
+```sh
+dart custom_generator.dart generate
 ```
 
 Bu işlem sonucunda `lib/translations/` klasörüne `locale_keys.s.dart` dosyası oluşturulur.
